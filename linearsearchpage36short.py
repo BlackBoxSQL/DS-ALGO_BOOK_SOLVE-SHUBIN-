@@ -1,14 +1,11 @@
 def linear_search(L, x):
     n = len(L)
-    i = 0
-    while i < n:
+    for i in range(n):
         if L[i] == x:
             return i
-        i += 1
-    i = -1
-    return i
+    return -1
 
 
 if __name__ == "__main__":
     L = ['Babli', 'Hajar Bochor Dhore', '3', 2]
-    print(linear_search(L, "Hajar Bochor Dhore"))
+    print(linear_search(L, "Babli"))
