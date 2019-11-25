@@ -1,6 +1,7 @@
 def linear_search(L, x):
-    n = len(L)
-    for i in range(n):
+    # n = len(L)
+    # for i in range(n):
+    for i in range(len(L)):
         if L[i] == x:
             return i
     return -1
